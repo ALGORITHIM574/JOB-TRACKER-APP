@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JOB TRACKER APP </title>
+    <header> 
+        <h1>JOB TRACKER APP</h1>
+        <p>This is where you find all your jobs in one place</p>
+    </header>
+
+</head>
+<body>
+<main class="container">
+<section class="main">
+<form id="submit form">
+    <input type="text" id="company" placeholder="Company Name" required>
+    <input type="text" id="role" placeholder="Job Role" required>
+    <input type="date" id="myDate" name="myDate">
+     <select id="status">
+                    <option value="Applied">Applied</option>
+                    <option value="Interview">Interview</option>
+                    <option value="Offer">Offer</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+     <button type="submit">Add Job</button>
+</form>
+</section>
+ <section class="job-list">
+            <h2>Your Applications</h2>
+
+            <ul id="jobList">
+
+                <!-- Jobs will appear here dynamically -->
+
+            </ul>
+        </section>
+</main>
+<footer class="footer">
+    <p>designed and build by ZERO ERROR COMPANY </p>
+        &copy; 2026 My Website. All rights reserved.
+        <br>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
