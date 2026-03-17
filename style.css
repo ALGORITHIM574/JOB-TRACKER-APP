@@ -15,11 +15,10 @@ body{
     padding: 20px;
 }
 
-/* MOBILE SPECIFIC ADJUSTMENT */
 @media (max-width: 767px){
     body{
         background-size: contain;   
-        background-position: top;  /* aligns nicely for mobile */
+        background-position: top; 
     }
 }
 
@@ -45,20 +44,17 @@ header p{
     background: rgba(41, 54, 59, 0.452);
     padding: 20px;
     border-radius: 10px;
-    max-width: 95%;      /* responsive width for small screens */
+    max-width: 95%;     
     margin: auto;
 }
 
-/* ---------------- */
-/* FORM */
-/* ---------------- */
+
 form{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* INPUTS */
 input, select{
     padding: 12px;
     border-radius: 8px;
@@ -68,7 +64,6 @@ input, select{
     color: rgb(37, 9, 219);
 }
 
-/* BUTTON */
 button{
     padding: 12px;
     border: none;
@@ -83,9 +78,7 @@ button:hover{
     background: #1c33b8;
 }
 
-/* ---------------- */
-/* JOB LIST */
-/* ---------------- */
+
 .job-list{
     margin-top: 25px;
 }
@@ -106,9 +99,7 @@ li{
     border-radius: 8px;
 }
 
-/* ---------------- */
-/* TABLET STYLES */
-/* ---------------- */
+
 @media (min-width: 768px){
     body{
         min-height: 100vh;
@@ -130,9 +121,7 @@ li{
 
 }
 
-/* ---------------- */
-/* DESKTOP STYLES */
-/* ---------------- */
+
 @media (min-width: 1024px){
 
     .container{
