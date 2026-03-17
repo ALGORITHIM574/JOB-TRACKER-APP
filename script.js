@@ -13,3 +13,18 @@ gsap.from("main",{
     opacity:0,
     duration:5
 });
+const form = document.getElementById("jobForm");
+const jobList = document.getElementById("jobList");
+
+form.addEventListener("submit" ,function(e){
+     e.preventDefault();
+     const company = document.getElementById("company").value;
+     const role = document.getElementById("role").value;
+     const date  = document.getElementById("myDate").value;
+     const status = document.getElementById("status").value;
+
+     const li = document.createElement("li");
+     li.textContent = ` COMPANY: ${company} - ROLE:  ${role} - DATE:  ${date} - STATUS: ${status}`;
+     jobList.appendChild(li);
+     form.reset();
+})

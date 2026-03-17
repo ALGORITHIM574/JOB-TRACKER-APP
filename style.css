@@ -135,6 +135,11 @@ li{
     }
 
 }
+.list{
+    text-align: center;
+    color: beige;
+    font-weight: bolder;
+}
 .footer{
     text-align: center;
     margin-top: 10%;
