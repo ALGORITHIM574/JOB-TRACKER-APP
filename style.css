@@ -17,7 +17,7 @@ body{
 
 @media (max-width: 767px){
     body{
-        background-size: contain;   
+        background-size: cover;   
         background-position: top; 
     }
 }
@@ -38,6 +38,21 @@ header p{
     margin-top: 20px;
     font-size: 20px;
 }
+.auth{
+      background: rgba(41, 54, 59, 0.452);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;     
+    margin: auto;
+    text-align: center;
+}
+h2{
+    padding: 20px;
+}
+ .auth input , 
+ .auth button{
+    margin: 10px;
+}
 
 
 .container{
@@ -56,12 +71,12 @@ form{
 }
 
 input, select{
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
     border: 2px solid #2a4dff;
     font-weight: bold;
     background: transparent;
-    color: rgb(37, 9, 219);
+    color: rgb(33, 5, 243);
 }
 
 button{
@@ -104,15 +119,20 @@ li{
     body{
         min-height: 100vh;
     }
+    .auth{
+        max-width: 500px;
+    }
 
     form{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
     }
 
     input, select{
-        width: 200px;
+        width: 100%;
+        max-width:300px;
     }
 
     button{
@@ -142,6 +162,6 @@ li{
 }
 .footer{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 40px;
     line-height: 20px;
 }
